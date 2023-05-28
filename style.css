@@ -15,6 +15,7 @@ header{
 }
 
 .cabeçalho{
+    text-align: center;
     padding: 0;
 }
 .body{
@@ -28,9 +29,10 @@ header{
 }
 
 .topicos{
-   padding: 0 16px;
-   display:inline-block;
-   font-size: 30px;
+    color:#fdffff;
+    padding: 0 16px;
+    display:inline-block;
+    font-size: 30px;
 }
 
 .arquivo{
