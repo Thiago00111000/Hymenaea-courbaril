@@ -3,6 +3,11 @@
     padding: 0;
 }
 
+body{
+    font-family:'Courier New', Courier, monospace;
+    background-color: #f7fafb;
+ }
+
 header{
    background-color:#358BA6;
    color:#fdffff;
@@ -18,19 +23,12 @@ header{
     text-align: center;
     padding: 0;
 }
-.body{
-    font-family: 'Noto Serif', serif;
- }
-
-.banner{
-    display:inline;
-    justify-content:baseline;
-    width: 100%;
-}
 
 .topicos{
     color:#fdffff;
     padding: 0 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
     display:inline-block;
     font-size: 30px;
 }
@@ -41,12 +39,12 @@ header{
     justify-content:center;
     display:flexbox;
     font-size: 25px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
  }
 
  .diva{
     text-align: center;
+    padding-top: 2.5%;
+    font-size: 25px;
  }
 
 .bookshelf{
