@@ -4,43 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heureca-Menu</title>
+    <title>Heureca-Home</title>
+    <link rel="icon" type="image/png" href="Imgs/Icon/icon.png">
     <link rel="stylesheet" href="style.css">
     <link rel="javascript" href="script.js">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
-    <link rel="imagens" href="Imagens">
+    <link rel="Imgs" href="Imgs">
 </head>
 <body>
-    
     <header class="cabeçalho">
-        <img class="banner" src="Imagens/Desktop - 1.png" alt="error_404">
-        <div class="topicos"><input class="search" type="text" placeholder="Procurar um arquivo..."></input></div>
-        <a href="https://thiago00111000.github.io/Hymenaea-courbaril/"><l1 class="topicos">  Menu ></l1></a>
-        <a href="https://thiago00111000.github.io/Quercus-alba/"><l1 class="topicos">  Categorias ></l1></a>
-        <a href="https://thiago00111000.github.io/Canis-vulpes/"><l1 class="topicos">  Herbário ></l1></a>
-        <a href="https://thiago00111000.github.io/Pinus-sylvestris/"><l1 class="topicos">  Sobre ></l1></a>
+        <l1 class="topicos" id="title">Heureca</l1>
+        <a href="index.html"><l1 class="topicos"> Home ></l1></a>
+        <a href="Shelf.html"><l1 class="topicos">  Books ></l1></a>
+        <a href="link.html"><l1 class="topicos">  About ></l1></a>
     </header>
     <section class="arquivo">
-        <div class="diva"><h1>Recomendações</h1></div>
+        <div class="titulo"><h1>Livro do Dia</h1></div>
         <section class="estante">
-            <ul class="bookshelf">
-                <a href=""><img class="livros" src="Imagens/001.jpg" alt="N/A"><span class="span">The-Republic-of-Plato</span></a>
-                <a href=""><img class="livros" src="Imagens/002.jpg" alt="N/A"><span class="span">Iracama</span></a>
-                <a href=""><img class="livros" src="Imagens/003.jpg" alt="N/A"><span class="span">On-the-Origin-of-Species-by-Means-of-Natural-Selection</span></a>
-                <a href=""><img class="livros" src="Imagens/004.jpg" alt="N/A"><span class="span">Dom-Casmurro</span></a>
-                <a href=""><img class="livros" src="Imagens/005.jpg" alt="N/A"><span class="span">Discurso-do-Metodo</span></a>
-                <a href=""><img class="livros" src="Imagens/006.png" alt="N/A"><span class="span">Principia</span></a>
-                <a href=""><img class="livros" src="Imagens/007.jpg" alt="N/A"><span class="span">um-Conto-de-duas-cidades</span></a>
-                <a href=""><img class="livros" src="Imagens/008.png" alt="N/A"><span class="span">a-arte-da-guerra</span></a>              
-                <a href=""><img class="livros" src="Imagens/009.png" alt="N/A"><span class="span">os-lusiadas</span></a>
-                <a href=""><img class="livros" src="Imagens/010.png" alt="N/A"><span class="span">malleus-malleficarum</span></a>
-            </ul>
+            <a href="javascript:openSite()">Click to go to a random site</a>
         </section>
     </section>
-    <script src="script.js"></script>
+    <script src="js/sorteio.js">
+        function openPDF() {
+  var links = [
+              "google.com",
+              "youtube.com",
+              "reddit.com",
+              "apple.com"]
+              
+  
+              openPDF = function() {
+                // get a random number between 0 and the number of links
+                var randIdx = Math.random() * links.length;
+                // round it, so it can be used as array index
+                randIdx = parseInt(randIdx, 10);
+                // construct the link to be opened
+                var link = 'http://' + links[randIdx];
+                };
+                
+      return link;
+      
+      document.getElementById("link").innerHTML = openSite();
+  }
+    </script>
 </body>
 </html>
-
-<!-- -->
