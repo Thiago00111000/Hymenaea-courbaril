@@ -22,32 +22,18 @@
     </header>
     <section class="arquivo">
         <div class="titulo"><h1>Livro do Dia</h1></div>
+        <div class="text">
+            <p>Aqui estão os livros adicionados cada dia</p>
+        </div>
         <section class="estante">
-            <a href="javascript:openSite()">Click to go to a random site</a>
+            <li class="livro">
+                <img id="title" src="Imgs/Icon/book.png">
+                <a href="Txt/Livros/Literatura/Vidas-Secas.zip"><h1>Vidas Secas</h1></a>
+                <p class="data">Graciliano Ramos</p>
+                <p class="data">09/07/2024</p>
+            </li>
+            
         </section>
     </section>
-    <script src="js/sorteio.js">
-        function openPDF() {
-  var links = [
-              "google.com",
-              "youtube.com",
-              "reddit.com",
-              "apple.com"]
-              
-  
-              openPDF = function() {
-                // get a random number between 0 and the number of links
-                var randIdx = Math.random() * links.length;
-                // round it, so it can be used as array index
-                randIdx = parseInt(randIdx, 10);
-                // construct the link to be opened
-                var link = 'http://' + links[randIdx];
-                };
-                
-      return link;
-      
-      document.getElementById("link").innerHTML = openSite();
-  }
-    </script>
 </body>
 </html>
