@@ -113,6 +113,8 @@ input{
     justify-content: baseline;
     padding: 20px 20px;
     size: 500px ;
+    border: 1px solid var(--sombra);
+    border-radius: 40px;
  }
 
  a{
