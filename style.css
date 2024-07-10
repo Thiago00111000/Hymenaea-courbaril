@@ -88,11 +88,12 @@ input{
 
  .titulo{
     text-align: center;
-    padding-top: 2.5%;
+    padding-top: 1.5%;
     font-size: 25px;
+    text-decoration:underline;
  }
-
-.bookshelf{
+ 
+ .bookshelf{
     text-align: left;
     padding: 50px 0px;
     text-shadow: var(--sombra);
@@ -102,20 +103,26 @@ input{
 
 /*itens*/
 
- .livro{
+.livro{
     border-top: 1px solid var(--sombra);
     padding: 20px 20px;
     size: 500px ;
  }
 
- .new{
+.new{
+    padding: 20px 50px;
     text-align: center;
-    justify-content: baseline;
-    padding: 50px 20px;
+    justify-content: center;
     size: 500px ;
-    border: 1px solid var(--sombra);
+    font-size: 20px;
+    border: 1px solid var(--segunda-cor-do-texto);
     border-radius: 40px;
- }
+}
+        
+.titulo-new{
+    text-align: center;
+    padding-top: 2.5%;
+}
 
  a{
     color: var(--cor-do-texto);
@@ -123,7 +130,7 @@ input{
  }
  
 .span{
-    display: none;
+    color: var(--cor-fundo);
 }
 
 /*Texto*/
@@ -165,6 +172,9 @@ input{
      background-color: var(--cor-fundo);
  }
  
+.p{
+    cursor: default;
+}
 
  @media screen and (min-width: 460px) {
     #title{
@@ -173,22 +183,5 @@ input{
     }
     input{
         width: 150%;
-    }
-}
-
-@media (prefers-color-scheme: dark) {
-    body{
-        background-color: var(--cor-do-texto);
-        color:  var(--cor-fundo);
-    }
-        
-    header{
-        background-color: var(--cor-do-texto);
-       background-image: linear-gradient(to bottom, var(--preto), var(--cor-do-texto));
-    }   
-
-    
-    button{
-        background-color: var(--cor-do-texto);
     }
 }
